@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+header p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #4da3ff;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    background: #555;
+    color: white;
+    display: flex;
+    padding: 60px 40px;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4da3ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #1e7fe8;
+    transform: scale(1.05);
+}
+
+.hero-image {
+    width: 50%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 280px;
+    border-radius: 6px;
+    transition: transform 0.5s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.08);
+}
+
+.about {
+    display: flex;
+    padding: 60px 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 240px;
+    transition: transform 0.5s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.08);
+}
+
+.about-text {
+    margin-left: 40px;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4da3ff;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: #1e7fe8;
+    transform: scale(1.05);
+}
+
+.skills {
+    background: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skills li:hover {
+    background: #4da3ff;
+    color: white;
+    transform: scale(1.1);
+}
+
+.projects {
+    padding: 40px;
+}
+
+.project-box {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #4da3ff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.contact {
+    background: #eee;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact p {
+    transition: color 0.3s ease;
+}
+
+.contact p:hover {
+    color: #4da3ff;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

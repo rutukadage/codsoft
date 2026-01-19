@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutu Kadage | Portfolio</title>
+    <style>
+        :root {
+            --primary-bg: #1a1a1a;
+            --secondary-bg: #ffffff;
+            --accent: #3b82f6;
+            --text-light: #f3f4f6;
+            --text-dark: #1f2937;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: var(--secondary-bg);
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97') center/cover;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            color: var(--text-light);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #d1d5db;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .section {
+            padding: 100px 10%;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 20px 20px 0px var(--accent);
+        }
+
+        .about h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .skill-tag {
+            background: #f3f4f6;
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: 600;
+            color: var(--text-dark);
+            border-bottom: 3px solid transparent;
+            transition: 0.3s;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: var(--primary-bg);
+            color: #9ca3af;
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 768px) {
+            .about { grid-template-columns: 1fr; text-align: center; }
+            .hero h1 { font-size: 2.5rem; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RUTU KADAGE</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Software Developer</h2>
+            <h1>RUTU G. KADAGE</h1>
+            <p>BTech in Computer Science and Engineering student at Punya Shlok Ahilyabai Holkar University. Dedicated to clean, scalable code and innovative problem solving.</p>
+            <a href="mailto:rutukadage@gmail.com" class="btn">HIRE ME</a>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <img src="profile pic.png" alt="Rutu Kadage" class="about-img">
+        <div>
+            <h3>ABOUT ME</h3>
+            <p>I am a detail-oriented software developer with strong problem-solving skills and a passion for writing clean, scalable code. I thrive in collaborative and agile environments, constantly seeking to simplify complex mechanisms through user-friendly interfaces.</p>
+            <br>
+            <p><strong>Education:</strong> BTech in CSE (2024-2027) | Diploma in Computer Engineering (2021-2024)</p>
+            <a href="CV.pdf" class="btn" style="margin-top: 25px; background: var(--text-dark);">DOWNLOAD CV</a>
+        </div>
+    </section>
+
+    <section class="section" id="skills" style="background: #fafafa;">
+        <h3 style="text-align: center; font-size: 2.5rem;">MY SKILLS</h3>
+        <div class="skills-grid">
+            <div class="skill-tag">C / C++</div>
+            <div class="skill-tag">HTML / CSS / JS</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">Java / Advance Java</div>
+            <div class="skill-tag">Flutter</div>
+            <div class="skill-tag">React Native</div>
+        </div>
+    </section>
+
+    <section class="section" id="experience">
+        <h3>EXPERIENCE & PROJECTS</h3>
+        <div style="margin-top: 30px;">
+            <h4>Internship: Mobile Application Development</h4>
+            <p style="color: #666;">OneStar Solution Company, Sangli (2022-2023)</p>
+            <p>Hands-on experience in designing and testing mobile apps for Android using Android Studio, Java/Kotlin, and Flutter/React Native.</p>
+        </div>
+        <div style="margin-top: 30px;">
+            <h4>Project: Electric Lineman Safety System</h4>
+            <p>Implemented a password-based circuit breaker system to enhance worker safety and prevent unauthorized access.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Rutu Kadage | rutukadage@gmail.com | Udgaon, Maharashtra | 7620157496</p>
+    </footer>
+
+</body>
+</html>
